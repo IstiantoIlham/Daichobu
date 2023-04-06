@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mainBorder {
+    @apply border border-white/50
+}
+
+.loginForm {
+    @apply mainBorder px-10 py-5 backdrop-blur-xl bg-mainblack/20 rounded-3xl
+}
+
+.form {
+    @apply mainBorder p-5 backdrop-blur-xl bg-mainblack/20 rounded-3xl
+}
+
+.hoverOrange {
+    @apply hover:bg-mainOrange/70 transition duration-300
+}
+
+.textHover {
+    @apply hover:text-blue-500 transition duration-300
+}
+
+.activeNavCategory{
+    @apply bg-mainOrange mainBorder rounded-xl hover:bg-mainOrange/70 transition duration-300
+}
