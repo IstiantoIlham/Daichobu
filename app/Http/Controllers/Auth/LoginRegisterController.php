@@ -61,7 +61,7 @@ class LoginRegisterController extends Controller
         }
 
         return back()->withErrors([
-            'email' => 'Your provided credentials do not match in our records.',
+            'email' => 'Your Email do not match',
         ])->onlyInput('email');
     }
 
