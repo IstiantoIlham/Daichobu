@@ -9,4 +9,7 @@
         @endif --}}
     </div>
     @include('Components.lobby')
+    <div class="flex justify-center bg-mainblack p-10">
+        @include('Components.card')
+    </div>
 @endsection

@@ -25,3 +25,7 @@
 .activeNavCategory{
     @apply bg-mainOrange mainBorder rounded-xl hover:bg-mainOrange/70 transition duration-300
 }
+
+.mainCard {
+    @apply mainBorder px-5 py-3 backdrop-blur-xl bg-mainblack/40 rounded-xl 
+}
