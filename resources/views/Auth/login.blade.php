@@ -23,21 +23,15 @@
             <form action="{{ route('authenticate') }}" method="POST" class="w-full flex flex-col gap-6">
                 @csrf
                 <div>
-                    <input type="email" name="email" id="email"
-                        class="form w-full text-xl text-white  @error('email') @enderror" placeholder="Email"
-                        value="{{ old('email') }}">
-                    @if ($errors->has('email'))
-                        <span class="text-base text-red-500">{{ $errors->first('email') }}</span>
-                    @endif
+                    <input type="email" name="email" id="email" class="form w-full text-xl text-white"
+                        placeholder="{{ $errors->has('email') ? $errors->first('email') : 'Email' }}"
+                        value="@if (!$errors->has('email')) {{ old('email') }} @endif">
                 </div>
 
                 <div>
                     <input type="password" name="password" id="password"
-                        class="form w-full text-xl text-white @error('password') @enderror" placeholder="Password"
-                        required=''>
-                    @if ($errors->has('password'))
-                        <span class="text-base text-red-500">{{ $errors->first('password') }}</span>
-                    @endif
+                        class="form w-full text-xl text-white @error('password') @enderror"
+                        placeholder="{{ $errors->has('password') ? $errors->first('password') : 'Password' }}">
                 </div>
 
                 <button type="submit"

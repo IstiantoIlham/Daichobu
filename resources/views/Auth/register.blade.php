@@ -20,29 +20,22 @@
                 @csrf
                 <div>
                     <input type="name" name="name" id="name"
-                        class="form w-full text-xl text-white @error('name') is-invalid @enderror" placeholder="Name"
+                        class="form w-full text-xl text-white @error('name') is-invalid @enderror"
+                        placeholder="{{ $errors->has('name') ? $errors->first('name') : 'Name' }}"
                         value="{{ old('name') }}">
-                    @if ($errors->has('name'))
-                        <span class="text-red-500">{{ $errors->first('name') }}</span>
-                    @endif
                 </div>
 
                 <div>
                     <input type="email" name="email" id="email"
-                        class="form w-full text-xl text-white @error('email') is-invalid @enderror" placeholder="Email"
+                        class="form w-full text-xl text-white @error('email') is-invalid @enderror"
+                        placeholder="{{ $errors->has('email') ? $errors->first('email') : 'Email' }}"
                         value="{{ old('email') }}">
-                    @if ($errors->has('email'))
-                        <span class="text-red-500">{{ $errors->first('email') }}</span>
-                    @endif
                 </div>
 
                 <div>
                     <input type="password" name="password" id="password"
                         class="form w-full text-xl text-white @error('password') is-invalid @enderror"
-                        placeholder="Password">
-                    @if ($errors->has('password'))
-                        <span class="text-red-500">{{ $errors->first('password') }}</span>
-                    @endif
+                        placeholder="{{ $errors->has('password') ? $errors->first('password') : 'Password' }}">
                 </div>
 
                 <div>
