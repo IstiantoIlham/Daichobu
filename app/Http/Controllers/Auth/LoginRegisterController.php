@@ -25,7 +25,7 @@ class LoginRegisterController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|string|max:10',
+            'name' => 'required|string|max:250',
             'email' => 'required|email|max:250|unique:users',
             'password' => 'required|min:8|confirmed',
         ]);
@@ -65,24 +65,13 @@ class LoginRegisterController extends Controller
         ])->onlyInput('email');
     }
 
-    public function dashboard()
-    {
-        if (Auth::check()) {
-            return view('dashboard');
-        }
-
-        return redirect()->route('login')
-            ->withErrors([
-                'email' => 'Please login to access the dashboard.',
-            ])->onlyInput('email');
-    }
 
     public function logout(Request $request)
     {
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('login')
+        return redirect()->route('dashboard')
             ->withSuccess('You have logged out successfully!');;
     }
 }

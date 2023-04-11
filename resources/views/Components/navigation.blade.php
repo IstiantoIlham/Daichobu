@@ -18,7 +18,10 @@
 
         </div>
     @else
-        <div>
+        <div class="flex flex-row gap-5 ">
+            <a href="/"
+                class="px-5 py-2.5 text-white text-xl bg-mainOrange mainBorder rounded-xl hover:bg-red-500/10 transition duration-300">Create Recipe</a>
+
             <a class="px-5 py-2.5 text-white text-xl bg-red-500 mainBorder rounded-xl hover:bg-red-500/10 transition duration-300"
                 href="{{ route('logout') }}"
                 onclick="event.preventDefault();
