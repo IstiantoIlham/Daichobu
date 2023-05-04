@@ -1,6 +1,6 @@
 <div class="w-full px-mainPaddingX py-[25px] fixed top-0 z-30 flex flex-row justify-between">
     <a href="/">
-        <x-application-logo />
+        <x-application-logo/>
     </a>
     @guest
         <div class="flex flex-row gap-5">
@@ -19,7 +19,7 @@
         </div>
     @else
         <div class="flex flex-row gap-5 ">
-            <a href="/"
+            <a href="{{route('posts.create')}}"
                 class="px-5 py-2.5 text-white text-xl bg-mainOrange mainBorder rounded-xl hover:bg-red-500/10 transition duration-300">Create Recipe</a>
 
             <a class="px-5 py-2.5 text-white text-xl bg-red-500 mainBorder rounded-xl hover:bg-red-500/10 transition duration-300"

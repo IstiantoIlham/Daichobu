@@ -11,7 +11,7 @@
 }
 
 .form {
-    @apply mainBorder p-5 backdrop-blur-xl bg-mainblack/20 rounded-3xl
+    @apply mainBorder p-5 backdrop-blur-xl bg-white/20 rounded-3xl
 }
 
 .hoverOrange {
@@ -27,5 +27,5 @@
 }
 
 .mainCard {
-    @apply mainBorder px-5 py-3 backdrop-blur-xl bg-mainblack/40 rounded-xl 
+    @apply mainBorder px-5 py-3 backdrop-blur-xl bg-mainblack/40 rounded-xl
 }

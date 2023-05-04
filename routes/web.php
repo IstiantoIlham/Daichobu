@@ -15,7 +15,8 @@ use Symfony\Component\Mailer\Transport\Smtp\Auth\LoginAuthenticator;
 |
 */
 
-Route::get("/", "App\Http\Controllers\PostController@index")->name('dashboard');
+Route::view('/', 'dashboard ')->name('dashboard');
+Route::resource('/posts', \App\Http\Controllers\PostController::class);
 
 Route::controller(LoginRegisterController::class)->group(function () {
     Route::get('/register', 'register')->name('register');

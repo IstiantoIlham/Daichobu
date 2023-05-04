@@ -44,7 +44,7 @@ class LoginRegisterController extends Controller
 
     public function login()
     {
-        return view('auth.login');
+        return view('Auth.login');
     }
 
     public function authenticate(Request $request)

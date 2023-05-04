@@ -8,9 +8,9 @@
 
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="bg-mainblack">
     <header>
-        @include('Components.navigation')
+        <x-navigation/>
     </header>
 
     <main>
@@ -18,7 +18,7 @@
     </main>
 
     <footer>
-        @include('Components.Footer')
+        <x-Footer/>
     </footer>
 </body>
 </html>

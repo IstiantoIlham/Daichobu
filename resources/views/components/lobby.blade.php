@@ -6,5 +6,6 @@
         <div class="m-0 text-6xl text-white">MAKE YOUR</div>
         <div class="m-0 text-9xl text-mainOrange font-bold">DREAM FOOD</div>
         <div class="m-0 text-6xl text-white">WITH US</div>
+        <a class="text-white"  href="/posts">text</a>
     </div>
 </div>
