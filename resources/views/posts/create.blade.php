@@ -54,8 +54,8 @@
                 <div class="text-2xl font-bold">Content</div>
                 <div class="form">
                     <div class="bg-white p-5 rounded-xl text-mainblack">
-                        <input id="x" type="hidden" name="content">
-                        <trix-editor input="x">{{ old('content') }}</trix-edit>
+                        <input id="x" type="hidden" name="content" value="{{ old('content') }}">
+                        <trix-editor input="x"></trix-edit>
                     </div>
                 </div>
             </div>
