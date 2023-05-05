@@ -37,9 +37,9 @@
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                             </svg>
-                            <div class="    ">Click Here to Upload Your Image</div>
+                            <div class="">Click Here to Upload Your Image</div>
+                            <input type="file" name="image" class="">
                         </span>
-                        <input type="file" name="image" class="hidden">
                     </label>
                 </div>
             </div>
@@ -53,9 +53,9 @@
             <div class="flex flex-col gap-6">
                 <div class="text-2xl font-bold">Content</div>
                 <div class="form">
-                    <div class="bg-white p-5 rounded-xl">
+                    <div class="bg-white p-5 rounded-xl text-mainblack">
                         <input id="x" type="hidden" name="content">
-                        <trix-editor input="x" class="text-mainblack">{{ old('content') }}</trix-edit>
+                        <trix-editor input="x">{{ old('content') }}</trix-edit>
                     </div>
                 </div>
             </div>

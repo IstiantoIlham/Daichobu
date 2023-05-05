@@ -29,3 +29,6 @@
 .mainCard {
     @apply mainBorder px-5 py-3 backdrop-blur-xl bg-mainblack/40 rounded-xl
 }
+
+.trix-button-group.trix-button-group--block-tools{display: none;}
+.trix-button--icon-attach{display: none;}

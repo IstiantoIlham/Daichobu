@@ -1,7 +1,7 @@
 @extends('Layout.app')
 
 @section('content')
-    <div class="p-mainPaddingX flex flex-col gap-24 text-white">
+    <div class="p-mainPaddingX flex flex-col gap-6 text-white">
         <div class="flex flex-col gap-6">
             <div class="flex flex-row justify-between">
                 <a href="" onclick="history.back()">
@@ -43,9 +43,6 @@
             <div class="text-4xl font-bold">{{ $post->title }}</div>
         </div>
 
-        <div class="space-y-4">
-            <div class="text-2xl font-bold">Content</div>
-            <div>{!! $post->content !!}</div>
-        </div>
+        <div class="text-xl">{!! $post->content !!}</div>
     </div>
 @endsection

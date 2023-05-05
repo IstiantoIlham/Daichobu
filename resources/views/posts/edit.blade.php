@@ -55,9 +55,9 @@
             <div class="flex flex-col gap-6">
                 <div class="text-2xl font-bold">Content</div>
                 <div class="form">
-                    <div class="bg-white p-5 rounded-xl">
+                    <div class="bg-white p-5 rounded-xl text-mainblack">
                         <input id="x" type="hidden" name="content" value="{{ old('content', $post->content) }}">
-                        <trix-editor input="x" class="text-mainblack"></trix-editor>
+                        <trix-editor input="x" class=""></trix-editor>
                     </div>
                 </div>
             </div>
