@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 //import Model "Post
 use App\Models\Post;
-
+use App\Models\User;
 use Illuminate\Http\Request;
 
 //return type View
@@ -69,7 +69,7 @@ class PostController extends Controller
         ]);
 
         //redirect to index
-        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Disimpan!']);
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -113,7 +113,7 @@ class PostController extends Controller
     {
         //validate form
         $this->validate($request, [
-            'image'     => 'image|mimes:jpeg,jpg,png|max:2048',
+            'image'     => 'image|mimes:jpeg,jpg,png,webp|max:2048',
             'title'     => 'required|min:5',
             'content'   => 'required|min:10'
         ]);
@@ -148,7 +148,7 @@ class PostController extends Controller
         }
 
         //redirect to index
-        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -169,6 +169,6 @@ class PostController extends Controller
         $post->delete();
 
         //redirect to index
-        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Dihapus!']);
+        return redirect()->route('posts.index');
     }
 }

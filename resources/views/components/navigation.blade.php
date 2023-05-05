@@ -1,4 +1,4 @@
-<div class="w-full px-mainPaddingX py-[25px] fixed top-0 z-30 flex flex-row justify-between">
+<div class="w-full px-mainPaddingX py-[25px] fixed top-0 z-30 flex flex-row justify-between bg-mainblack/50 backdrop-blur-2xl items-center">
     <a href="/">
         <x-application-logo />
     </a>

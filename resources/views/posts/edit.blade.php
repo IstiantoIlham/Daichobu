@@ -26,7 +26,7 @@
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                     </svg>
                 </button>
-                <div class="text-white font-bold text-2xl">Create Recipe</div>
+                <div class="text-white font-bold text-2xl">Edit Recipe</div>
             </div>
 
             <div class="space-y-5">

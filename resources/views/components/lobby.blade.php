@@ -6,6 +6,6 @@
         <div class="m-0 text-6xl text-white">MAKE YOUR</div>
         <div class="m-0 text-9xl text-mainOrange font-bold">DREAM FOOD</div>
         <div class="m-0 text-6xl text-white">WITH US</div>
-        <a class="text-white"  href="/posts">text</a>
+        <a class="text-white text-2xl py-3 px-8 animate-bounce bg-mainOrange hoverOrange border border-white rounded-xl"  href="/posts">Let's see recipes</a>
     </div>
 </div>

@@ -39,7 +39,7 @@ class LoginRegisterController extends Controller
         $credential = $request->only('email', 'password');
         Auth::attempt($credential);
         $request->session()->regenerate();
-        return redirect()->route('dashboard')->withSuccess('You have successfully registered & logged in!');
+        return redirect()->route('dashboard');
     }
 
     public function login()
@@ -56,8 +56,7 @@ class LoginRegisterController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->route('dashboard')
-                ->withSuccess('You have successfully logged in!');
+            return redirect()->route('dashboard');
         }
 
         return back()->withErrors([
@@ -71,7 +70,6 @@ class LoginRegisterController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect()->route('dashboard')
-            ->withSuccess('You have logged out successfully!');;
+        return redirect()->route('dashboard');
     }
 }

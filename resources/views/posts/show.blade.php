@@ -5,7 +5,7 @@
         <div class="flex flex-col gap-6">
             <div class="flex flex-row justify-between">
                 <a href="" onclick="history.back()">
-                    <div class="w-16 h-16 border border-white rounded-full flex algin-center justify-center">
+                    <div class="w-16 h-16 border border-white hover:bg-white/25 hover:backdrop-blur-2xl transition duration-300 rounded-full flex algin-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white w-8" fill="none" viewBox="0 0 24 24"
                             stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
